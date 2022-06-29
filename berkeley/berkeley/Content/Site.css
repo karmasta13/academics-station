@@ -1,0 +1,10 @@
+﻿@font-face {
+    font-family: nucleo;
+    src: url(../fonts/nucleo.ttf);
+}
+
+.nucleo {
+    font-family: nucleo !important;
+    letter-spacing: 20px !important;
+    color: red !important;
+}

@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="berkeley.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> -Berkeley</title>
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+     <!-- Nucleo Icons -->
+    <link href="Content/css/nucleo-icons.css" rel="stylesheet" />
+     <link href="Content/css/nucleo-svg.css" rel="stylesheet" />
+     <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="Content/css/nucleo-svg.css" rel="stylesheet" />
+     <!-- CSS Files -->
+    <link id="pagestyle1" href="Content/css/Site.css" rel="stylesheet" />
+    <link id="pagestyle" href="Content/css/argon-dashboard.css?v=2.0.1" rel="stylesheet" />
+
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+
+</head>
+<body class="g-sidenav-show   bg-gray-100">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+       <div class="min-height-300 bg-primary position-absolute w-100"></div>
+        <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+            <div class="sidenav-header">
+              <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+              <a class="navbar-brand m-0" >
+                <img src="../Content/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="ms-1 font-weight-bold">Berkeley System</span>
+              </a>
+            </div>
+            <hr class="horizontal dark mt-0">
+            <div class="collapse navbar-collapse  w-auto h-auto " id="sidenav-collapse-main">
+                <ul class="navbar-nav">
+
+                 <li class="nav-item">
+                    <a class="nav-link" runat="server" href="~/Dashboard.aspx" ID="Dashboard">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-chart-bar text-dark text-sm opacity-8" aria-hidden="true" ></i>
+
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Simple Webform</h6>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" runat="server" href="~/Student.aspx" ID="Student">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-user-friends text-dark text-sm opacity-8"" aria-hidden="true" ></i>
+
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Student</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/Department.aspx" ID="Department">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                         <i class="fa fa-building text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Department</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/Teacher.aspx" ID="Teacher">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-chalkboard-teacher text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Teacher</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/Address.aspx" ID="Address">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-address-book text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Address</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/Module.aspx" ID="Module">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                         <i class="fa fa-book text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Module</span>
+                    </a>
+                </li>
+
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Complex Webform</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/Teacher_Module.aspx" ID="Teacher_Module">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-book text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Teacher - Module</span>
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link " runat="server" href="~/StudentFeePayment.aspx" ID="StudentFeePayment">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-money-check text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Student Fee Payment</span>
+                    </a>
+                   
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/Student_Assignment.aspx" ID="Student_Assignment">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa fa-book-reader text-dark text-sm opacity-8" aria-hidden="true" ></i>
+                    </div>
+                    <span class="nav-link-text ms-1 mt-1">Student - Assignment</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+          
+            </aside>
+
+        <main class="main-content position-relative border-radius-lg ">
+
+      
+        <div class="container-fluid py-4">
+      
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+     </main>
+
+    </form>
+    <!--   Core JS Files   -->
+    <script src="Scripts/js/core/popper.min.js"></script>
+    <script src="Scripts/js/core/bootstrap.min.js"></script>
+    <script src="Scripts/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="Scripts/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="Scripts/js/plugins/chartjs.min.js"></script>
+
+    <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+    </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="Scripts/js/argon-dashboard.min.js?v=2.0.1"></script>
+
+    <script>
+		
+		var cur_page = <%: Page.Title %>;
+		var element = document.getElementById(cur_page.id);
+		element.className += ' active';
+
+	</script>
+	
+	<asp:ContentPlaceHolder ID="JavaScriptContent" runat="server">
+	</asp:ContentPlaceHolder>
+
+</body>
+
+</html>
