@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+    Author: Labbi Karmacharya
+    Date  : 29 April 2021
+-->
+
+<!-- Linking External CSS with the XML document -->
+<?xml-stylesheet type="text/css" href="karmastaMusic.css"?>
+
+<!-- Linking External DTD with the XML document -->
+<!DOCTYPE Store SYSTEM "karmastaMusic.dtd">
+
+<!-- Linking External Schema with the XML document through the Root Tag -->
+<!-- <Store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:noNamespaceSchemaLocation="karmastaMusic.xsd" 
+    xsi:schemaLocation="https://www.w3schools.com/xml karmastaMusic.xsd"> -->
+
+
+<!-- Root Tag containing other child elements -->
+<Store>
+
+    <!-- Header Tag containing other header elements of the page -->
+    <Header>
+
+         <!-- StoreLogo containing image element of the store -->
+        <StoreLogo xmlns="http://www.w3.org/1999/xhtml">
+            <!-- Image element containing details about the store logo -->
+            <img id="storeLogo" src="./image/main_logo.png">Karmasta Music Store logo</img>                                                  
+        </StoreLogo>
+
+        <!-- Information regarding karmasta music store -->
+        <Name>Karmasta Music Store</Name>
+        <Slogan>- Leading the retail industry in digital music commerce -</Slogan>
+        <About>
+            <![CDATA[
+               Established in 1982 A.D., Karmasta Music Store is an industry leader in the music retailing business based on London, UK.
+               The store is one of the biggest retail shops for music records, albums, and any thing related to music (as long as it is accessible).                 
+            ]]>
+        </About>
+
+    </Header>
+
+
+    <!-- Songs Tag containing other childs elements related to song -->
+    <Songs>
+
+        <!-- Song Tag (first element of many) containing other childs elements related to song information -->
+        <Song songID="0101" genre="Indie pop" length="00:02:53">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/water-melon.png">Watermelon Sugar Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Watermelon Sugar</Title>
+            
+                <Artist>Harry Styles</Artist>
+
+                <ReleaseYear>2020</ReleaseYear>
+    
+                <Writer>Harry Styles</Writer>
+                <Writer>Mitch Rowland</Writer>
+                <Writer>Tyler Johnson</Writer>
+                <Writer>Thomas Hull</Writer>
+                
+                <Director>Andy McLeod</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Fine Line</Album>
+                <Comment>A collaboration of artists from various genre of the international community.</Comment>
+                <Rating>4.8</Rating>
+
+                <Producer>Johnson</Producer>
+                <Producer>Kid Harpoon</Producer>
+    
+                <RecordLabel>Erskine Columbia</RecordLabel>
+                
+    
+                <Price currency="pound" discount="10%">£1.29</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+        <!-- Song Tag (second element of many) containing other childs elements related to song information -->        
+        <Song songID="0110" genre="Pop rock" length="00:03:57">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/amnesia.png">Amnesia Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Amnesia</Title>
+            
+                <Artist>5 Seconds of Summer</Artist>
+
+                <ReleaseYear>2014</ReleaseYear>
+                
+    
+                <Writer>Michael Biancaniello</Writer>
+                <Writer>Louis Biancaniello</Writer>
+                <Writer>Benji Madden</Writer>
+                <Writer>Joel Madden</Writer>
+                <Writer>Sam Wattersk</Writer>
+
+                <Director>Andy McLeod</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>5 Seconds of Summer</Album>
+                <Comment>A collaboration of artists from various genre of the international community.</Comment>
+                <Rating>4.5</Rating>
+
+                <Producer>M. Biancaniello</Producer>
+                <Producer>L. Bianceniello</Producer>
+                <Producer>Watters</Producer>
+    
+                <RecordLabel>Capitol</RecordLabel>
+                <RecordLabel>Hi or Hey</RecordLabel>
+    
+                <Price currency="pound" discount="15%">£1.98</Price>
+
+            </AlbumDescription>
+
+        </Song>
+
+
+        <!-- Song Tag (third element of many) containing other childs elements related to song information -->        
+        <Song songID="0120" genre="Pop" length="00:03:20">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/lovely.png">Lovely Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Lovely</Title>
+            
+                <Artist>Billie Eilish</Artist>
+                <FeaturedArtist>Khalid</FeaturedArtist>
+
+                <ReleaseYear>2018</ReleaseYear>
+    
+                <Writer>Billie Eilish</Writer>
+                <Writer>Finneas</Writer>
+                <Writer>Khalid Robinson</Writer>
+                
+                <Director>Taylor Cohen</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>13 Reasons Why: Season 2</Album>
+                <Comment>A collaboration of artists from various genre of the international community.</Comment>
+                <Rating>4.6</Rating>
+
+                <Producer>Finneas O'Connell</Producer>
+    
+                <RecordLabel>Darkroom</RecordLabel>
+                <RecordLabel>Interscope</RecordLabel>
+    
+                <Price currency="pound" discount="10%">£1.58</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+
+        <!-- Song Tag (fourth element of many) containing other childs elements related to song information -->
+        <Song songID="0130" genre="Folk" length="00:03:18">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Heather.png">Heather Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Heather</Title>
+            
+                <Artist>Conan Gray</Artist>
+
+                <ReleaseYear>2020</ReleaseYear>
+    
+                <Writer>Conan Gray</Writer>
+
+                <Director>Conan Gray</Director>
+                <Director>Dilion Matthew</Director>
+
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Kid Krow</Album>
+                <Comment>Heather” is the tenth track of Conan’s debut album, Kid Krow.</Comment>
+                <Rating>4</Rating>
+
+                <Producer>Jam City</Producer>
+                <Producer>Dan Nigro</Producer>
+    
+                <RecordLabel>Republic</RecordLabel>
+                <RecordLabel>Island</RecordLabel>
+    
+                <Price currency="pound" discount="10%">£1.78</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+
+        <!-- Song Tag (fifth element of many) containing other childs elements related to song information -->
+        <Song songID="0140" genre="Dream Pop" length="00:04:47">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Life.png">Lust for Life Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Lust for Life</Title>
+            
+                <Artist>Lana Del Rey</Artist>
+                <FeaturedArtist>The Weeknd</FeaturedArtist>
+
+                <ReleaseYear>2017</ReleaseYear>
+    
+                <Writer>Lana Del Rey</Writer>
+                <Writer>Rock Nowels</Writer>
+                <Writer>Abel Tesfaye</Writer>
+                <Writer>Max Martin</Writer>
+
+                <Director>Clark Jackson</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Lust For Life</Album>
+                <Comment>This is the first collaboration between Lana and the weeknd.</Comment>
+                <Rating>4.7</Rating>
+
+                <Producer>Lana Del Rey</Producer>
+                <Producer>Rick Nowels</Producer>
+                <Producer>Abel Tesfaye</Producer>
+    
+                <RecordLabel>Plydor Records</RecordLabel>
+                <RecordLabel>Interscope Records</RecordLabel>
+    
+                <Price currency="pound" discount="5%">£1.48</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+
+        <!-- Song Tag (sixth element of many) containing other childs elements related to song information -->
+        <Song songID="0150" genre="Latin pop" length="00:03:11">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Senorita.png">Senorita Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Senorita</Title>
+            
+                <Artist>Shawn Mendes</Artist>
+                <FeaturedArtist>Camila Cabello</FeaturedArtist>
+    
+                <ReleaseYear>2019</ReleaseYear>
+
+                <Writer>Shawn Mendes</Writer>
+                <Writer>Camila Cabello</Writer>
+                <Writer>Andrew Wotman</Writer>
+                <Writer>Benjamin Levin</Writer>
+                <Writer>Alxandra Tamposi</Writer>
+
+                <Director>Dave Meyers</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Shawn Mendes</Album>
+                <Comment>A collaboration between Canadian singer and Cuban-American singer.</Comment>
+                <Rating>4.4</Rating>
+
+                <Producer>Andrew Watt</Producer>
+                <Producer>Benny Blanco</Producer>
+                <Producer>Cashmere Cat</Producer>
+    
+                <RecordLabel>Island Records</RecordLabel>
+                <RecordLabel>Epic Records</RecordLabel>
+    
+                <Price currency="pound" discount="13%">£1.45</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+
+        <!-- Song Tag (seventh element of many) containing other childs elements related to song information -->
+        <Song songID="0160" genre="Pop-rap" length="00:04:04">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/End_Game.png">End Game Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>End Game</Title>
+            
+                <Artist>Taylor Swift</Artist>
+                <FeaturedArtist>Ed Sheeran</FeaturedArtist>
+                <FeaturedArtist>Reputation</FeaturedArtist>
+                
+                <ReleaseYear>2017</ReleaseYear>
+    
+                <Writer>Taylor Swift</Writer>
+                <Writer>Max Martin</Writer>
+                <Writer>Shellback</Writer>
+                <Writer>Ed Sheeran</Writer>
+                <Writer>Nayvadius Wilburn</Writer>
+
+                <Director>Joseph Kahn</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Reputation</Album>
+                <Comment>A collaboration of artists from various genre of the international community.</Comment>
+                <Rating>4</Rating>
+
+                <Producer>Max Martin</Producer>
+                <Producer>Shellback</Producer>
+    
+                <RecordLabel>Big Machine Records</RecordLabel>
+    
+                <Price currency="pound" discount="11%">£1.43</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+
+        <!-- Song Tag (eighth element of many) containing other childs elements related to song information -->
+        <Song songID="0170" genre="Electropop" length="00:02:56">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/icecream.png">Ice-cream Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Ice Cream</Title>
+                
+                <Artist>Blackpink</Artist>
+                <FeaturedArtist>Selena Gomez</FeaturedArtist>
+
+                <ReleaseYear>2020</ReleaseYear>
+    
+                <Writer>Selena Gomez</Writer>
+                <Writer>Teddy</Writer>
+                <Writer>Tommy Brown</Writer>
+                <Writer>Ariana Grande</Writer>
+                <Writer>Victoria Monet</Writer>
+
+                <Award>Best Collaboration of the Year</Award>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>The Album</Album>
+                <Comment>A collaboration of artists from South Korean and America.</Comment>
+                
+                <Rating> 4.3</Rating>
+                <Producer>Teddy</Producer>
+                <Producer>Tommy Brown</Producer>
+                <Producer>Mr. Franks</Producer>
+    
+                <RecordLabel>YG Records</RecordLabel>
+                <RecordLabel>Interscope Records</RecordLabel>
+    
+                <Price currency="pound" discount="13%">£1.66</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+
+        <!-- Song Tag (nineth element of many) containing other childs elements related to song information -->
+        <Song songID="0180" genre="Pop" length="00:03:17">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/beautiful_people.jfif">Beautiful People Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Beautiful People</Title> 
+            
+                <Artist>Ed Sheeran</Artist>
+                <FeaturedArtist>Khalid Robinson</FeaturedArtist>
+    
+                <ReleaseYear>2019</ReleaseYear>
+
+                <Writer>Ed Sheeran</Writer>
+                <Writer>Khalid Robinson</Writer>
+                <Writer>Fred Gibson</Writer>
+                <Writer>Max Martin</Writer>
+                <Writer>Shellback</Writer>
+
+                <Director>Andy McLeod</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>No.6 Collaborations Project</Album>
+                <Comment>A collaboration of artists from various genre of the international community.</Comment>
+
+                <Producer>Ed Sheeran</Producer>
+                <Producer>Benny Blanco</Producer>
+                <Producer>Kenny Beats</Producer>
+    
+                <RecordLabel>Asylum Records</RecordLabel>
+                <RecordLabel>Atlantic Records</RecordLabel>
+    
+                <Price currency="usd" discount="11%">$1.98</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+ 
+        <!-- Song Tag (tenth element of many) containing other childs elements related to song information -->       
+        <Song songID="0190" genre="Pop" length="00:02:46">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Snowman.jpg">Snowman Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Snowman</Title>
+            
+                <Artist>Sia</Artist>
+    
+                <ReleaseYear>2017</ReleaseYear>
+
+                <Writer>Sia Furler</Writer>
+                <Writer>Greg Kurstin</Writer>
+                
+                <Director>Andy McLeod</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Everyday is Christmas</Album>
+                <Comment>This song was written/sang by Australian singer.</Comment>
+                <Rating>4</Rating>
+
+                <Producer>Greg Kurstin</Producer>
+                
+                <RecordLabel>Monkey Puzzle Records</RecordLabel>
+                <RecordLabel>Atlantic Records</RecordLabel>
+    
+                <Price currency="usd" discount="15%">$1.38</Price>
+
+            </AlbumDescription>
+
+        </Song>
+
+
+        <!-- Song Tag (eleventh element of many) containing other childs elements related to song information -->        
+        <Song songID="0200" genre="Indie" length="00:03:45">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Hozier.jpg">Nina Cried Power Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Nina Cried Power</Title>
+            
+                <Artist>Hozier</Artist>
+
+                <ReleaseYear>2018</ReleaseYear>
+    
+                <Writer>Hozier</Writer>
+                <Writer>Markus Dravus</Writer>
+                
+                <Director>Floria Sigismondi</Director>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Wastland,Baby!</Album>
+
+                <Rating>4.7</Rating>
+
+                <Producer>Hozier</Producer>
+                <Producer>Markus Dravus</Producer>
+    
+                <RecordLabel>Rubyworks</RecordLabel>
+                <RecordLabel>Island</RecordLabel>
+    
+                <Price currency="pound" discount="12.5%">£1.08</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+    
+        <!-- Song Tag (twelveth element of many) containing other childs elements related to song information -->    
+        <Song songID="0210" genre="Alternative rock" length="00:03:53">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Reason.jpg">The Reason Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>The Reason</Title>
+            
+                <Artist>Hoobastank</Artist>
+
+                <ReleaseYear>2004</ReleaseYear>
+    
+                <Writer>Douglas Robb</Writer>
+                <Writer>Dan Estrin</Writer>
+                <Writer>Chris Hesse</Writer>
+                <Writer>Markku</Writer>
+
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>The Reason</Album>
+                
+                <Rating>4.8</Rating>
+
+                <Producer>Howard Benson</Producer>
+                <Producer>Kenny Beats</Producer>
+    
+                <RecordLabel>Island Records</RecordLabel>
+                <RecordLabel>Mercury Records</RecordLabel>
+    
+                <Price currency="usd" discount="11%">$2.08</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+       
+        <!-- Song Tag (thirteenth element of many) containing other childs elements related to song information -->
+        <Song songID="0220" genre="Electronic" length="00:03:02">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Lighter.jpeg">Lighter Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Lighter</Title>
+            
+                <Artist>Nathan Dawe</Artist>
+                <FeaturedArtist>KSI</FeaturedArtist>
+
+                <ReleaseYear>2020</ReleaseYear>
+    
+                <Writer>Nathan Dawe</Writer>
+                <Writer>Olajide Olatunji</Writer>
+                <Writer>Gabriella Henderson</Writer>
+                <Writer>Tre Jean-Marie</Writer>
+                <Writer>Jonny Lattimer</Writer>
+
+                <Director>Troy Roscoe</Director>
+
+                <Award>UK Best Song</Award>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>N/A</Album>
+                <Comment>One of the hits of the summer.</Comment>
+                <Rating>4.5</Rating>
+
+                <Producer>Nathan Dawe</Producer>
+                <Producer>Tre Jean Marie</Producer>
+    
+                <RecordLabel>Altlantic Warner Records</RecordLabel>
+    
+                <Price currency="pound" discount="11%">£1.29</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+        
+        <!-- Song Tag (fourteenth element of many) containing other childs elements related to song information -->
+        <Song songID="0230" genre="Pop" length="00:07:04">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Layla.jpg">Layla Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>Layla</Title>
+            
+                <Artist>Derek and the Dominos</Artist>
+
+                <ReleaseYear>1971</ReleaseYear>
+    
+                <Writer>Eric Clapton</Writer>
+                <Writer>Jim Gordon</Writer>
+                
+                <Director>Patti Harrison</Director>
+
+                <Award>Grammy Hall of Fame</Award>
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Layla and Other Assorted Love Songs</Album>
+                <Comment>Great emotional songs performed by two of the greatest guitarists of all-time </Comment>
+                <Rating>4.7</Rating>
+
+                <Producer>Tom Dowd</Producer>
+                <Producer>Derek and Dominos</Producer>
+                <Producer>Kenny Beats</Producer>
+    
+                <RecordLabel>Atco Records</RecordLabel>
+                <RecordLabel>RSO Records</RecordLabel>
+    
+                <Price currency="pound" discount="15%">£1.98</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+        
+        <!-- Song Tag (fifteenth element of many) containing other childs elements related to song information -->
+        <Song songID="0240" genre="Pop" length="00:03:17">
+
+            <!-- CoverArt containing image element of the cover art -->
+            <CoverArt xmlns="http://www.w3.org/1999/xhtml">
+                <!-- Image element containing details about the cover art -->
+                <img class="songart" src="./image/Blondie.jpg">One Way or Another Coverart</img> 
+            </CoverArt>
+
+            <!-- Description of the song based on title, artist, release year, writer, director, and, award -->
+            <SongDescription>
+
+                <Title>One Way or Another</Title>
+            
+                <Artist>Blondie</Artist>
+
+                <ReleaseYear>1979</ReleaseYear>
+    
+                <Writer>Debbie Harry</Writer>
+                <Writer>Nigel Harrison</Writer>
+                
+            
+            </SongDescription>
+
+            <!-- Description of the album based on album, comment, rating, producer, record label, and, price -->
+            <AlbumDescription>
+    
+                <Album>Parallel Lines</Album>
+                
+                <Rating>4.3</Rating>
+
+                <Producer>Mike Chapman</Producer>
+    
+                <RecordLabel>Chrysalis Records</RecordLabel>
+                    
+                <Price currency="pound" discount="15%">£3.99</Price>
+
+            </AlbumDescription>
+
+
+        </Song>
+
+    </Songs>
+
+
+
+
+    <!-- Footer Tag containing other footer elements of the page with contact information -->
+    <Footer>
+
+        <Address>Hampstead Heath, London NW3 2QD</Address>
+        <Phone>(+977) 341-139-0890</Phone>        
+        <Email>info@karmastamusicstore.com</Email>
+        <Website>https://www.karmastamusicstore.com</Website>
+        
+    </Footer>
+
+
+
+</Store>

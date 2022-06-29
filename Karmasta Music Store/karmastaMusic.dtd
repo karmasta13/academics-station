@@ -1,0 +1,45 @@
+<!ELEMENT Store (Header, Songs, Footer)>
+
+<!ELEMENT Header (StoreLogo, Name, Slogan, About)>
+<!ELEMENT StoreLogo (img)>
+<!ELEMENT img (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Slogan (#PCDATA)>
+<!ELEMENT About (#PCDATA)>
+
+
+<!ELEMENT Songs (Song+)>
+<!ELEMENT Song (CoverArt, SongDescription, AlbumDescription)>
+<!ELEMENT CoverArt (img)>
+
+<!ELEMENT SongDescription (Title, Artist, FeaturedArtist*,ReleaseYear, Writer+, Director*, Award?)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT ReleaseYear (#PCDATA)>
+<!ELEMENT FeaturedArtist (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Award (#PCDATA)>
+
+<!ELEMENT AlbumDescription (Album, Comment?, Rating?, Producer+, RecordLabel+, Price)>
+<!ELEMENT Album (#PCDATA)>
+<!ELEMENT Comment (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT RecordLabel (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+
+
+<!ELEMENT Footer (Address, Phone, Email, Website)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+
+
+
+<!ATTLIST StoreLogo xmlns CDATA #FIXED "http://www.w3.org/1999/xhtml">
+<!ATTLIST CoverArt xmlns CDATA #FIXED "http://www.w3.org/1999/xhtml">
+<!ATTLIST img id (storeLogo|songart) #IMPLIED class CDATA #IMPLIED src CDATA #REQUIRED>
+<!ATTLIST Song songID CDATA #REQUIRED genre CDATA #REQUIRED length CDATA #REQUIRED>
+<!ATTLIST Price currency CDATA #REQUIRED discount CDATA #IMPLIED>

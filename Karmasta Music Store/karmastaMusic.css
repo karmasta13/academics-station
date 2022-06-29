@@ -1,0 +1,212 @@
+/*Import custom fonts*/
+
+@font-face {
+    font-family: champ;
+    src: url(./font/Champagne_&_Limousines.ttf);
+}
+
+@font-face {
+    font-family: champBold;
+    src: url(./font/Champagne_&_Limousines_Bold.ttf);
+}
+
+@font-face {
+    font-family: helveticaBold;
+    src: url(./font/Helvetica_Bold.ttf);
+}
+
+* {
+    display: grid;
+    font-family: champ;
+    color: white;
+}
+
+Store {
+    background-color: #273134;
+}
+
+Header {
+    height: 100vh;
+    text-align: center;
+}
+
+Name {
+    display: box;
+    font-size: 4vmax;
+    font-family: champBold;
+    color: #0784b5;
+    margin-top: 10vh;
+    margin-bottom: 50vh;
+}
+
+StoreLogo {
+    position: absolute;
+    top: 10%;
+    left: 32%;
+}
+
+#storeLogo {
+    width: 35vmax;
+}
+
+Slogan {
+    font-size: 2vmax;
+    padding-top: 3vmax;
+    padding-bottom: 1vmax;
+}
+
+About {
+    color: rgb(156, 157, 164);
+    font-size: 1vmax;
+    line-height: 1.75vmax;
+    padding-left: 20vmax;
+    padding-right: 20vmax;
+    padding-bottom: 20vmax;
+}
+
+Footer {
+    text-align: center;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+}
+
+Address,
+Phone,
+Email,
+Website {
+    color: #a8aba9;
+    font-size: 0.8vmax;
+    font-family: champ;
+    letter-spacing: 0.18vmax;
+    margin: 0.25vmax;
+}
+
+Songs {
+    background-color: #0784b5;
+    padding: 4vmax;
+}
+
+Song {
+    display: flex;
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+    border-style: solid;
+    border-color: #459dc1;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding-bottom: 2vmax;
+}
+
+CoverArt {
+    margin-right: 3vmax;
+}
+
+.songart {
+    width: 18vmax;
+    height: 18vmax;
+}
+
+.songart:hover {
+    box-shadow: 0 0 20px #063345;
+}
+
+SongDescription,
+AlbumDescription {
+    padding-left: 2vmax;
+}
+
+Title,
+Artist,
+FeaturedArtist,
+ReleaseYear,
+Writer,
+Director,
+Award,
+Album,
+Comment,
+Rating,
+Producer,
+RecordLabel,
+Price {
+    display: flex;
+    letter-spacing: 0.1vmax;
+}
+
+Title::before {
+    color: #d1d1d1;
+    content: "Title: ";
+    white-space: pre;
+}
+
+Artist::before {
+    color: #d1d1d1;
+    content: "Artist: ";
+    white-space: pre;
+}
+
+FeaturedArtist::before {
+    color: #d1d1d1;
+    content: "Featured Artist: ";
+    white-space: pre;
+}
+
+ReleaseYear::before {
+    color: #d1d1d1;
+    content: "Release Year: ";
+    white-space: pre;
+}
+
+Writer::before {
+    color: #d1d1d1;
+    content: "Writer: ";
+    white-space: pre;
+}
+
+Album::before {
+    color: #d1d1d1;
+    content: "Album: ";
+    white-space: pre;
+}
+
+Director::before {
+    color: #d1d1d1;
+    content: "Director: ";
+    white-space: pre;
+}
+
+Award::before {
+    color: #d1d1d1;
+    content: "Award: ";
+    white-space: pre;
+}
+
+Comment::before {
+    color: #d1d1d1;
+    content: "Comment: ";
+    white-space: pre;
+}
+
+Rating::before {
+    color: #d1d1d1;
+    content: "Rating: ";
+    white-space: pre;
+}
+
+Producer::before {
+    color: #d1d1d1;
+    content: "Producer: ";
+    white-space: pre;
+}
+
+RecordLabel::before {
+    color: #d1d1d1;
+    content: "Record Label: ";
+    white-space: pre;
+}
+
+Price::before {
+    color: #d1d1d1;
+    content: "Price: ";
+    white-space: pre;
+}

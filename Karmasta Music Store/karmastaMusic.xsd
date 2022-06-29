@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+    Author: Labbi Karmacharya
+    Date  : 29 April 2021
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="karmastaMusic2.xsd" namespace="http://www.w3.org/1999/xhtml" />
+
+  <xs:element name="Store">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="Header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:karma1="http://www.w3.org/1999/xhtml" ref="karma1:StoreLogo" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Slogan" type="xs:string" />
+              <xs:element name="About" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Songs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Song">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element xmlns:karma2="http://www.w3.org/1999/xhtml" ref="karma2:CoverArt" />
+                    <xs:element name="SongDescription">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Title" type="xs:string" />
+                          <xs:element name="Artist" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="FeaturedArtist" type="xs:string" />
+                          <xs:element name="ReleaseYear" type="xs:unsignedShort" />
+                          <xs:element maxOccurs="unbounded" name="Writer" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Director" type="xs:string" />
+                          <xs:element minOccurs="0" name="Award" type="xs:string" />                        
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AlbumDescription">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Album" type="xs:string" />
+                          <xs:element minOccurs="0" name="Comment" type="xs:string" />
+                          <xs:element minOccurs="0" name="Rating" type="xs:decimal" />
+                          <xs:element maxOccurs="unbounded" name="Producer" type="xs:string" />
+                          <xs:element maxOccurs="unbounded" name="RecordLabel" type="xs:string" />
+                          <xs:element name="Price">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="currency" type="xs:string" use="required" />
+                                  <xs:attribute name="discount" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="songID" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="genre" type="xs:string" use="required" />
+                  <xs:attribute name="length" type="xs:time" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Footer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Address" type="xs:string" />
+              <xs:element name="Phone" type="xs:string" />
+              <xs:element name="Email" type="xs:string" />
+              <xs:element name="Website" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
