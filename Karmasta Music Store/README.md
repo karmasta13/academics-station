@@ -14,7 +14,7 @@ This coursework was assigned to us in second year, and we were to design a syste
 
 <p  align="center">
 
-<img  src="./image/firstScreen.png"  width="450"/>
+<img  src="./image/firstScreen.png">
 
 </p>
 
@@ -26,7 +26,7 @@ This coursework was assigned to us in second year, and we were to design a syste
 
 <p  align="center">
 
-<img  src="./image/secondScreen.png"  width="450"/>
+<img  src="./image/secondScreen.png"/>
 
 </p>
 
@@ -51,7 +51,7 @@ Some objectives for the coursework are given below:
 
 ## Run UI
 
-Open [karmastaMuisc.xml] in your web browser to run the UI
+Open [karmastaMuisc.xml](https://github.com/karmasta13/Academics/blob/main/Karmasta%20Music%20Store/karmastaMusic.xml) in your web browser to run the UI
 
   
 
