@@ -51,7 +51,7 @@ an Attractive Graphical Dashboard.
 
 - Visual Studio 2019
 
-- Run the sql commands inside the [Berkeley Sql Script]  file to create a database for the system.
+- Run the sql commands inside the [Berkeley Sql Script](https://github.com/karmasta13/Academics/blob/main/berkeley/Berkeley%20Sql%20Script.sql)  file to create a database for the system.
 
   
 <br>
