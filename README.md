@@ -1,5 +1,5 @@
 # Academics
-This includes all of the coursework I was thankful for and loved creating. Even if the majority of them are not applicable in a real-world context, I was able to get basic knowledge from these courseworks.c Some of them are linked below: 
+This includes all of the coursework I was thankful for and loved creating. Even if the majority of them are not applicable in a real-world context, I was able to get basic knowledge from these courseworks.Some of them are linked below: 
 
 * [Karmasta Music Store <span style="color:lightgrey">`XML`</span>](https://github.com/karmasta13/Academics/tree/main/Karmasta%20Music%20Store)  : This coursework was assigned to us in second year, and we were to design a system for a music store using XML development. This website is simply a prototype for a hypothetical company looking to build a website.
 
